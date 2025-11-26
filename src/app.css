@@ -1,0 +1,217 @@
+@font-face{font-family: fugen-font; src: url("./../public/Fonts/B_Yekan/Yekan.ttf");}
+*{font-family: fugen-font !important;}
+
+body{overflow-x: hidden}
+.blueColored{color: #2e59d7;}
+a{text-decoration: none !important;}
+
+body::-webkit-scrollbar{width: 10px;}
+body::-webkit-scrollbar-track {background: #1a1a1a;}
+body::-webkit-scrollbar-thumb {background: #2e59d7; border-radius: 10px;}
+body::-webkit-scrollbar-thumb:hover {background: #1f42aa;}
+
+.myNavbar{z-index: 100; position: relative;}
+.myNavbar .navbarItems h6{margin: 0px 20px; font-size: 17px; cursor: pointer;}
+.myNavbar a{color: #000;}
+.myNavbar h3{font-weight: 600; font-size: 23px; cursor: pointer; margin-bottom: 0px !important;}
+.myNavbar .navbarItems .iconWrapper{margin: 0px 10px; min-width: 30px; width: 30px; height: 30px;
+    border-radius: 50%; background: #2e59d7; display: flex; align-items: center; justify-content: center;
+    cursor: pointer;}
+.myNavbar .navbarItems .iconWrapper svg{color: #fff; font-size: 19px;}
+hr{margin: 0px !important;}
+
+.circleOverlay{position: absolute; left: -150px; top: -150px; font-size: 700px; opacity: 0.05; z-index: 10;}
+.homePage .overlap{background: #2e59d7; min-width: 500px; width: 500px; height: 500px; position: absolute;
+    right: 150px; top: 150px; border-radius: 50%; z-index: 100;}
+.homePage .overlapTwo{background: #132b73; min-width: 400px; width: 400px; height: 400px; position: absolute;
+    right: 0px; bottom: 0px;z-index: 99;}
+.homePage .imgWrapper{z-index: 200; position: relative; padding-top: 20px;}
+.homePage .imgWrapper img{width: 850px; pointer-events: none;}
+.homePage .info{z-index: 201; position: relative; padding-top: 100px; padding-right: 150px;}
+.homePage .info p{font-size: 36px; margin-bottom: 5px !important;}
+.homePage .info h1{font-size: 80px; font-weight: 600;}
+
+.homePage .info button{font-size: 20px; background: #2e59d7; color: #fff; padding-right: 30px;
+    padding-left: 30px; margin-top: 15px;}
+
+.homePage .info button::after{content: ""; position: absolute; inset: 0;
+    background: linear-gradient(to left, rgba(143, 187, 229, 0.4), rgba(33, 90, 212, 0)); opacity: 0; 
+    animation: sweep 5s infinite;}
+
+@keyframes sweep {
+  0% {
+    opacity: 0.99;
+    transform: scaleX(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+.whois p{font-size: 20px; margin-top: 20px; text-align: justify;}
+.whois .item span.num{font-size: 90px; font-weight: 600;}
+.whois .item span.info{font-size: 20px; font-weight: 600; margin-top: 10px;}
+
+.whois .devIcon{font-size: 1200px; position: absolute; left: -250px; bottom: -250px; opacity: 0.03; z-index: 1 !important;
+    pointer-events: none;}
+.whois .leftContent{padding-top: 100px;}
+.whois .skillBox{width: 400px; overflow-x: scroll; z-index: 200 !important; height: 100px;}
+.whois .skillBox .box{padding: 10px 50px; text-wrap: nowrap;  border-radius: 20px; background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid #2e59d7;}
+.whois .skillBox .box span{font-size: 20px;}
+.whois .skillBox .box span svg.react{margin-bottom: 3px; color: #23b1ca; transform: scale(2);}
+.whois .skillBox .box span svg.html{margin-bottom: 3px; color: #e4552e; transform: scale(2);}
+.whois .skillBox .box span svg.css{margin-bottom: 3px; color: #2d53e5; transform: scale(2);}
+.whois .skillBox .box span svg.nodejs{margin-bottom: 3px; color: #86cf2f; transform: scale(2);}
+.whois .skillBox .box span svg.express{margin-bottom: 3px; color: #a7a4a4; transform: scale(2);}
+.whois .skillBox .box span svg.bootstrap{margin-bottom: 3px; color: #8319fb; transform: scale(2);}
+.whois .skillBox .box span svg.mongodb{margin-bottom: 3px; color: #08ee69; transform: scale(2);}
+.whois .skillBox .box span svg.sqlserver{margin-bottom: 3px; color: #ba2426; transform: scale(2.5);}
+.whois .skillBox .box span svg.mysql{margin-bottom: 3px; color: #e59208; transform: scale(2);}
+.whois .skillBox .box span svg.csharp{margin-bottom: 3px; color: #a47ddd; transform: scale(2);}
+.whois .skillBox .box span svg.git{margin-bottom: 3px; color: #f05539; transform: scale(2);}
+.whois .skillBox .box span svg.github{margin-bottom: 3px; color: #000; transform: scale(2);}
+.whois .skillBox .box span svg.reactnative{margin-bottom: 3px; color: #66dbfb; transform: scale(2);}
+
+.whois .skillBox .scrollTrack {display: flex; width: max-content; animation: scrollLeft 20s linear infinite;}
+
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(50%);
+  }
+}
+
+.whois .skillBox::-webkit-scrollbar {display: none;}
+.whois .skillBox {scrollbar-width: none;}
+.whois .skillBox {-ms-overflow-style: none;}
+
+.resumePage{padding-top: 60px; padding-bottom: 60px;}
+.resumePage h1, .resumePage h3{font-weight: 600;}
+b{font-family: 'Times New Roman', Times, serif !important;}
+.resumePage .bio{font-size: 17px; text-align: justify; padding-left: 50px;}
+
+.resumePage .job{padding-right: 30px; padding-left: 30px; padding-top: 30px; padding-bottom: 15px;}
+.resumePage .job:hover{background: #2e59d7; border-radius: 30px;}
+.resumePage .job p{padding-top: 20px; font-size: 17px; font-weight: 600; margin-bottom: 0px;}
+.resumePage .job img{width: 200px; height: 200px; border-radius: 20px; cursor: pointer;}
+.resumePage .jobItems{padding: 0px 0px; background: #132b73; color: #fff; width: auto; border-radius: 30px;}
+
+.skillBox p{width: 90px; margin-left: 20px;}
+
+.jobCardInfo .shadow{border-radius: 30px;}
+.jobCardInfo ul{padding-right: 0px !important;}
+.jobCardInfo ul li{font-size: 17px;}
+.jobCardInfo img{border-radius: 20px; border: 2px solid #949090; padding: 5px;}
+.jobCardInfo img.fugen{width: 250px; height: 250px;}
+.jobCardInfo p.text-muted{font-size: 17px; text-align: justify; padding-top: 30px; padding-right: 30px; padding-left: 30px;}
+.jobCardInfo .siteBox a{color: #6c6868;}
+.borderCheck{position: absolute; top: 15px; left: 15px; cursor: pointer;}
+
+
+.projectPage .header{padding-top: 50px;}
+.projectPage .header h1{font-weight: 600; position: relative}
+.projectPage .header h1::after {content: ""; position: absolute; left: 0; bottom: -40px;  transform: translateX(-240px);       
+    width: 300%; height: 10px; background: #2e59d7;}
+.projectPage .header span{font-family: 'Times New Roman', Times, serif !important; font-size: 60px;
+    color: transparent; -webkit-text-stroke: 0.8px #24307f;}
+.projectPage .projectItems{padding-top: 40px; padding-bottom: 100px;}
+.projectBox{padding-top: 50px; padding-bottom: 50px;}
+.projectPage .projectItems .item{height: 250px; position: relative;}
+.projectPage .item svg{color: #928d8d; font-size: 24px;} 
+.projectPage .projectItems img{width: 100%; height: 100%; object-fit: cover;}
+.projectPage .projectItems h4{margin-top: 20px;}
+
+.aboutMePage{padding-top: 60px; min-height: 90vh;}
+.aboutMePage .header h1{font-weight: 600; font-size: 50px;}
+
+.contactBox{padding-top: 70px;}
+.contactBox h4{padding-top: 15px; color: #000;}
+.contactBox h6{font-family: 'Times New Roman', Times, serif !important;}
+.contactBox svg{font-size: 170px; color: #2e59d7;}
+.contactBox svg.telegram{font-size: 170px; color: #33a8da;}
+.contactBox svg.linkedin{font-size: 170px; color: #0a66c2;}
+
+.footer{z-index: 300;}
+.footer span{white-space: nowrap; margin: 10px; font-family: 'Times New Roman', Times, serif !important;}
+.footer .line{flex-grow: 1;height: 1px; background: #000;}
+
+/* responsive */
+
+.mobileNavbar{position: fixed; bottom: 0px; display: none; z-index: 1000;}
+.mobileNavbar .row{height: 60px; border-top-left-radius: 40px; border-top-right-radius: 40px; background: #2e59d7;}
+.mobileNavbar .col-3.home svg{font-size: 34px; cursor: pointer; color: #e8e4e4;}
+.mobileNavbar .col-3.cv svg{font-size: 28px; cursor: pointer; color: #e8e4e4;}
+.mobileNavbar .col-3.project svg{font-size: 34px; cursor: pointer; color: #e8e4e4;}
+.mobileNavbar .col-3.aboutme svg{font-size: 28px; cursor: pointer; color: #e8e4e4;}
+.boldIcon{transform: scale(1.2); transition: 0.5s; color: #fff !important;}
+
+@media screen and (max-width: 500px) {
+    body {
+        background: linear-gradient(180deg, #ffffff 0%, #e8ebff 100%);
+    }
+    .myNavbar{display: none !important; pointer-events: none;}
+    .mobileNavbar{position: fixed; bottom: 0px; display: block;}
+    .homePage{height: 95vh;}
+    .homePage .overlap{display: none;}
+    .homePage .overlapTwo{display: none;}
+    .mobileTextAlign{ padding-top: 30px; display: grid; place-items: center; padding-top: 30px; text-align: center;}
+    .homePage .imgWrapper{min-width: 250px; width: 250px; height: 250px; border-radius: 50%; overflow: hidden !important;
+        border: 1px solid #2e59d7; box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);}
+    .homePage .imgWrapper img{width: 300px; transform: translateX(10px);}
+    .homePage .info{padding: 0;}
+    .homePage .info p{font-size: 20px; margin-bottom: 5px !important;}
+    .homePage .info h1{font-size: 40px; font-weight: 600;}
+    .homePage .info button{font-size: 17px; background: #2e59d7; color: #fff; padding-right: 20px;
+        padding-left: 20px; margin-top: 5px;}
+    .circleOverlay{display: none;}
+
+    .fade-in {opacity: 0; animation: fade 0.8s ease forwards;}
+    @keyframes fade {to { opacity: 1; }}
+
+    .aboutMePage{height: auto; padding-bottom: 60px;}
+    .aboutMePage .header h1{font-size: 44px;}
+    .contactBox svg{font-size: 130px; margin-top: 30px;}
+    .contactBox svg.telegram{font-size: 130px;}
+    .contactBox svg.linkedin{font-size: 130px;}
+
+    .resumePage{text-align: center;}
+    .resumePage .bio{font-size: 17px; text-align: justify; padding-left: 20px; padding-right: 20px;}
+    .skillBox{padding-right: 20px; padding-left: 20px;}
+
+    .resumePage .jobItems{justify-content: center; border-radius: 0;}
+    .resumePage h3{margin-bottom: 20px;}
+    
+    .jobCardInfo{text-align: center;}
+    .jobCardInfo p.text-muted{padding-top: 0px; padding-right: 0px; padding-left: 0px;}
+    .jobCardInfo p.date{text-align: center;}
+    .jobCardInfo ul{text-align: justify;}
+    .jobCardInfo h3.blueColored{margin-top: 15px;}
+    .siteBox{padding-right: 0px !important; padding-left: 0px !important;}
+    .siteBox a{text-wrap: nowrap;}
+
+    .projectPage{padding-bottom: 100px;}
+    .projectPage .header h1::after {content: ""; position: absolute; left: 0; bottom: -20px;  transform: translateX(-30px);       
+        width: 300%; height: 6px; background: #2e59d7;}
+    .projectPage .header span{font-family: 'Times New Roman', Times, serif !important; font-size: 40px;
+        color: transparent; -webkit-text-stroke: 0.6px #24307f;}
+    .projectPage .projectItems{padding-right: 20px; padding-left: 20px; padding-top: 0px; padding-bottom: 0px;}
+    .projectPage .projectItems .item{margin-top: 140px;}
+    .noMarginTop{margin-top: 0px !important;}
+    .projectPage .projectItems h4{font-size: 19px;}
+
+    .whois h1, .whois p{padding-right: 20px; padding-left: 20px;}
+    .whois .devIcon{display: none}
+    .whois .item{margin: 10px !important;}
+    .whois .item span.num{font-size: 50px; font-weight: 600;}
+    .whois .item span.info{font-size: 18px; font-weight: 600; margin-top: 10px;}
+
+    .whois .leftContent{padding-bottom: 50px; padding-right: 30px; padding-left: 30px; padding-top: 30px;}
+}
