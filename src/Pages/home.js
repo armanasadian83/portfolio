@@ -48,7 +48,7 @@ const Home = () => {
                     <p className='blueColored'>هستم.</p>
 
                     <Link to='/me'>
-                        <Button>طراح و توسعه حوزه وب</Button>
+                        <Button>طراحی و توسعه حوزه وب</Button>
                     </Link>
                 </div>
 
